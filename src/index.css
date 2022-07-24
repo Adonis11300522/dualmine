@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  /* background: lightseagreen; */
+}
+
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.bg-gradient-r-p {
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  border: 0px !important;
+}
+
+.color-primary {
+  color: #3e4555;
+}
+
+.color-light-gray {
+  color: #8d97ad !important;
+}
+
+.color-pink {
+  color: #ff5279;;
+}
+
+.bg-light-sky {
+  background-color: #00b4ff;
+}
+
+.Header {
+  background: none;
+}
+
+.HomePage .card .card-body .card-icons {
+  background-color: #00b4ff;
+  border: 3px solid white;
+  font-size: 45px;
+  width: 100px;
+  height: 100px;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin: -60px 0 20px;
+}
+
+iframe {
+  z-index: -1;
+  left: 0;
+}
+
+.card-section {
+  top:-5rem
+}
+
+.Header .navbar{
+  background: #00b4ff;
+}
+
+.progress-wrapper {
+  background: #e1dbf0;
+  border:solid 1px #e1dbf0;
+  border-radius:50px;
+  height: 2.5rem;
+  overflow: hidden;
+  width: 100% !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1) inset;
+  /*progress width*/
+  width: 50%;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%) !important;
+  height: inherit;
+}
+
+.progress-bar-width{
+  border-radius: 50px;
+  width: 60%;
+}
+
+.progress-bar-anim {
+  animation: progress 3s linear infinite;
+  /* Don't touch this anim bar color*/
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent);
+  /* Don't touch this */
+  background-repeat: repeat-x;
+  /* The size of the bars must match the background-position in the @keyframes */
+  background-size: 1.5em 1.5em;
+  border-radius: 10px;
+  height: inherit;
+  width: 100% !important;
+  text-align:center;
+  color:white;
+}
+
+@keyframes progress {
+  to { background-position: 1.5em 0; }
+}
+
+.accordion .accordion-item .accordion-header {
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  background: transparent;
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+
+.accordion .accordion-item .accordion-header button {
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.accordion .accordion-item .accordion-header button:hover {
+  background: #00b4ff;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #1e1e1e !important;
+  background-color: #fbfbfb;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+}
